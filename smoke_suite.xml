@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke suite">
+    <listeners>
+        <listener class-name="com.demoqa.listener.ScreenshotListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/user/IdeaProjects/DemoQaWinter24">
+        <classes><class name="com.demoqa.elements.Locators"><methods>
+            <include name="findByIDTest"/>
+        </methods></class><class name="com.demoqa.elements.TextBox"><methods>
+            <include name="textBoxTest"/>
+        </methods></class><class name="com.demoqa.locators.FoodList"><methods>
+            <include name="findFoodList"/>
+        </methods></class>
+            <class name="ButtonsTest"></class>
+            <class name="FrameTest"></class>
+        </classes>
+    </test>
+</suite>
